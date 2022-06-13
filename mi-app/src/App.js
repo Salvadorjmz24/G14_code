@@ -6,7 +6,7 @@ import logo from './logo.svg';
 import './App.css';
 
 export default class App extends Component {
-  constructor() {
+  /*constructor() {
     super();
     this.state = {
       contador: 0,
@@ -17,24 +17,40 @@ export default class App extends Component {
     this.decreaseCounter = this.decreaseCounter.bind(this);
     this.setUpperLimit = this.setUpperLimit.bind(this);
     this.setLowerLimit = this.setLowerLimit.bind(this);
-  }
-  aumentarContador(){
+  } */
+  state = {
+    contador:0,
+    limiteSuperior:10,
+    limiteInferior:3,
+    mensajes:[]
+  };
+  aumentarContador =() => {
     if(this.state.contador < this.state.limiteSuperior){
       this.setState({ contador: this.state.contador + 1});
+    }else{
+      this.setState({
+        ...this.state,
+        mensajes:[...this.state.mensajes, `El límite superior es ${this.state.limiteSuperior}`]
+      })
     }
   }
 
-  decreaseCounter(){
+  decreaseCounter = () => {
     if(this.state.contador > this.state.limiteInferior){
       this.setState({ contador: this.state.contador - 1});
+    }else{
+      this.setState({
+        ...this.state,
+        mensajes:[...this.state.mensajes, `El límite inferior es ${this.state.limiteInferior}`]
+      })
     }
   }
 
-  setUpperLimit(upperLimit){
+  setUpperLimit = (upperLimit) => {
     this.setState({...this.state,limiteSuperior:upperLimit})
   }
 
-setLowerLimit(lowerLimit){
+setLowerLimit = (lowerLimit) => {
   this.setState({...this.state,limiteInferior:lowerLimit})
 }
 
@@ -59,6 +75,10 @@ setLowerLimit(lowerLimit){
 
         <Button handleClick={this.aumentarContador} title='Aumentador'/>
         <Button handleClick={this.decreaseCounter} title='disminuidor'/>
+
+        {this.state.mensajes.map( mensaje => (
+          <p> { mensaje } </p>
+        ) )}
         </header>
       </div>
     );
