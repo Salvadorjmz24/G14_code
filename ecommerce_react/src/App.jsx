@@ -1,9 +1,12 @@
 import { EcomScreen } from "./pages/EcomScreen/EcomScreen";
+import Header from "./pages/header/Header";
+
 
 const App = () => {
   return (
 
-    <div>
+    <div className="maincontainer">
+      <Header/>
       <EcomScreen />
     </div>
 
@@ -11,3 +14,4 @@ const App = () => {
 }
 
 export default App;
+

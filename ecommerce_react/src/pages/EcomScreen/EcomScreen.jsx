@@ -8,38 +8,34 @@ export const EcomScreen = () => {
     const [producto, setproductos] = useState([])
 
     const getProductos = async () => {
-        const res = await axios.get('https://ecomerce-master.herokuapp.com/api/v1/item/')
-        console.log('api', res.data);
-        setproductos(res.data)
+    const res = await axios.get('https://ecomerce-master.herokuapp.com/api/v1/item/')
+    console.log('api', res.data);
+    setproductos(res.data)
     }
 
     useEffect(() => {
-        getProductos();
+    getProductos();
     }, [])
 
 
     return (
 
-        <div className='App App-header'>
-            {
-                producto.map((producto) => (
-                    <div className="parent">
-                        <div className="card">
-                            <div className="container">
-                                <img className="imagen" src={producto.image} alt={producto.product_name} />
-                                <div>
-                                    <p key={producto._id}>
-                                    <p> {`Nombre: ${producto.product_name} `}</p>
-                                    <p>{`Precio: $ ${producto.price} `}</p>
-                                    </p>                
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                ))
-            }
+    producto.map((producto) => (
+
+
+        <div className="parent app app-header">
+            <div className="child">
+                <div className="card">
+                <img className="imagen" src={producto.image} alt={producto.product_name} />
+                <p> {`Nombre: ${producto.product_name} `}</p>
+                <p>{`Precio: $ ${producto.price} `}</p>
+                </div>
+            </div>
         </div>
+
+        ))
+
+
     )
 }
-
 
