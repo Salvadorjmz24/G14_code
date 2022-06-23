@@ -1,13 +1,12 @@
-import { EcomScreen } from "./pages/EcomScreen/EcomScreen";
-import Header from "./pages/header/Header";
-
+import { EcomScreen } from "./pages/EcomScreen/EcomScreen.jsx";
+import Footer from "./pages/footer/Footer";
 
 const App = () => {
   return (
 
     <div className="maincontainer">
-      <Header/>
       <EcomScreen />
+      <Footer />
     </div>
 
   );
