@@ -32,10 +32,7 @@ export const InputValue = ({ producto, setproductos, getdata }) => {
 
     return (
         <>
-        <a className="ini" href="/">
-                    <img src="frh.png"/>               
-                </a>
-            <div>
+            <div className='input-box'>
                 <div className='main-input'>
                     <div className='main-input-container'>
                         <span className="search-icon"></span>

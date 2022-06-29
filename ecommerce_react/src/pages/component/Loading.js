@@ -5,9 +5,11 @@ import './Loading.css'
 
 function Loading() {
     return (
-        <div className='divPadre'>
+        <div className='d-flex justify-content-center'>
             <div className='divHijo'>
-                <Spinner color="primary" className="spinnerReactstrap" />
+                <Spinner color="text-dark" className="spinner-grow" />
+                <Spinner color="text-dark" className="spinner-grow" />
+                <Spinner color="text-dark" className="spinner-grow" />
             </div>
         </div>
     )

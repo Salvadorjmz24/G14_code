@@ -1,26 +1,30 @@
 .navbar-brand-footer{
     align-items: center;
-    background-color: #616161  ;
+    background-color: #263238;
     display: flex;
-    justify-content: space-between;
-    padding: 0 100rem;
-    height: 8rem;
-    
-    
+    justify-content: space-evenly;
+    height: 12rem;
+    width: 100%;
+}
+.is-primary-footer{
+    width: 100%;
 }
 img{
     height: 60px;
 }
-.aio, .aho, .ahor{
+.aio{
     color: rgb(0, 0, 0);
     font-size: x-large;
     text-decoration: none;
-    padding: 10px;
-    
+    padding: 10px; 
+    filter: contrast(0.5);
+}
+.aho{
+    border-radius: 10%;
 }
 
-a:hover {
-    color: #000000;
+.aio:hover {
+    filter: none;
 }
 
 

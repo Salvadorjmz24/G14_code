@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../component/Loading.css'
 import "bootstrap/dist/css/bootstrap.css";
-import Loading from '/Loading.js'
+import Loading from './Loading.js'
 
 
 
@@ -24,7 +24,7 @@ function App() {
         return (
             <div className='App-loader'>
                 <br></br>
-                <button className='btn btn-primary' onClick={() => cambiarEstado()}>Loading</button>
+                <button className='btn text-dark' onClick={() => cambiarEstado()}>Loading</button>
             </div>
         )
     }
