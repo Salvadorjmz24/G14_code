@@ -11,7 +11,7 @@ export default function Header({ producto, setproductos, getdata }) {
             </div>
         <div className="navbar is-primary">
             <div className="navbar-brand">
-                <img className="logo-header" src="frh.png" alt="/"/>    
+                <img id="logo" className="logo-header" src="frh.png" alt="/"/>    
                 <InputValue producto={producto} setproductos={setproductos} getdata={getdata} />
                 <a className="ai" href="/">Inicio</a>
                 <a className="ai" href="/">Hoy</a>

@@ -1,30 +1,59 @@
 .navbar-brand-footer{
     align-items: center;
-    background-color: #263238;
     display: flex;
     justify-content: space-evenly;
-    height: 12rem;
+    height: 10rem;
     width: 100%;
+    background: linear-gradient(#607d8b, #ffff, #607d8b );
 }
 .is-primary-footer{
     width: 100%;
 }
 img{
+    height: 90px;
+}
+#logo{
     height: 60px;
 }
-.aio{
-    color: rgb(0, 0, 0);
-    font-size: x-large;
+li{
+    padding: 0 10px;
+    list-style: none;
+    display: inline;
+    
+}
+.footer{
+    color: black;
+    margin: 10px;
     text-decoration: none;
-    padding: 10px; 
-    filter: contrast(0.5);
+    font-weight: bold;
+    font-size: 20px;
 }
-.aho{
-    border-radius: 10%;
+#etiqueta_a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
 }
-
-.aio:hover {
-    filter: none;
+#etiqueta_a:hover{
+    text-decoration: none;
 }
-
-
+.bancos{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    height: 5rem;
+    width: 100%;
+    background: linear-gradient(#ffff, #607d8b );
+}
+img{
+    height: 120px;
+}
+#metop{
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
+#metop:hover{
+    text-decoration: double;
+    color: azure;
+}
