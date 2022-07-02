@@ -15,6 +15,9 @@ export default function Footer() {
                     <a id="metop" href="/">Medios de pago</a>
                     <li >< img src="LOGOS-NEGRO.png"/></li>
                 </div>
+            <div className="final">
+                <a id="final" href="/">© 2022 DEV.F®</a>
+            </div>
         </div>
 );
 }

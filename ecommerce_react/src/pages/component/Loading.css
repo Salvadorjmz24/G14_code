@@ -1,8 +1,42 @@
 
-.spinnerReactstrap{
-    width: 100px;
-    height: 100px;
-    border: 10px solid black;
-    border-right-color: transparent;
-    justify-content: space-between;
+.spinner{
+    position: relative;
+    width: 90px;
+    height: 90px;  
+}
+.spinner .dot{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.spinner .dot::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: linear-gradient(red, black, #ffff);
+    
+}
+
+@keyframes spin {
+    to{
+        transform:rotate(360deg) ;
+    }
+}
+.spinner .dot {
+    animation: spin 2s infinite;
+}
+.spinner .dot:nth-child(2){
+    animation-delay: 100ms;
+}
+.spinner .dot:nth-child(3){
+    animation-delay: 200ms;
+}
+.spinner .dot:nth-child(4){
+    animation-delay: 300ms;
+}
+.spinner .dot:nth-child(5){
+    animation-delay: 400ms;
 }

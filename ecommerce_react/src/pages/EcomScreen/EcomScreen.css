@@ -10,7 +10,7 @@ body{
 
 .maincontainer{
   align-items: center;
-  background-color: #eceff1 ;
+  background-color: #ffff ;
   display: flex;
   flex-wrap: wrap;
   font-size: medium;
@@ -19,8 +19,8 @@ body{
 }
 
 .parent {
- display: flex;
- flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   }
 
 .child{

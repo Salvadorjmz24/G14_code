@@ -21,10 +21,13 @@ export const EcomScreen = () => {
 
   useEffect(() => {
     getProductos();
-  }, [])
 
-
-
+    }, [])
+  // const validacionUrl = (url ,  image, images) =>{
+  //   if( 'validacionURL' === image.images)
+  //   console.log(url)
+  //   else console.log(null)
+  // }
   return (
     <>
       <Header producto={producto} setproductos={setproductos} getdata={getProductos} />
@@ -35,7 +38,8 @@ export const EcomScreen = () => {
           < div className="parent app app-header">
             <div className="child">
               <div className="card">
-                <img className="imagen" src={producto.image} alt={producto.product_name} />
+              <img className="imagen"src= {producto.images ? producto.images : producto.image || "https://cdn.shopify.com/s/files/1/0229/0839/files/bancos_de_imagenes_gratis.jpg?v=1630420628&width=1024"}/>
+              
                 <p> {`${producto.product_name} `}</p>
                 <p>{`Precio: $ ${producto.price} `}</p>
               </div>
