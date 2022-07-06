@@ -15,23 +15,25 @@ const RefLogin = () => {
     }
 
     return (
+        
         <div className='login'>
             <div className='login-container'>
-                <img src={logo} alt='logo' className='logo' width='200px' height='200px' />
+                <img src={logo} alt='logo' className='logo' width='100px' height='100px' />
                 <form className='form' ref={form} >
-                    <label htmlFor='email'>Email</label>
-                    <input
+                    <label className="email" htmlFor='email'>Email</label>
+                    <input 
                         type='text'
                         name='email'
                         placeholder='correo@mail.com'
                     />
 
-                    <label htmlFor='password'>Password</label>
+                    <label htmlFor='password'>contraseña</label>
                     <input
                         type='password'
                         name='password'
                         placeholder='******'
                     />
+
 
                     <button onClick={handleSubmit}>
                         Iniciar Sesión
