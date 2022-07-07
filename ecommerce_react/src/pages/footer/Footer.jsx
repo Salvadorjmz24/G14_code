@@ -10,8 +10,7 @@ export default function Footer() {
                     <a className="footer" href="/">Aviso de privacidad</a>
                 </div>                
                     <a id="etiqueta_a" href="/">Dev.f Hackeando Latinoamérica desde 2022_ </a>
-                    <a id="etiqueta_a" href="/">Dev.f Hackeando Latinoamérica desde 2022_ </a>
-                    
+                    <a id="etiqueta_a" href="/">Dev.f Hackeando Latinoamérica desde 2022_ </a>S
                 </div>  
                 <div className="bancos">
                     <a id="metop" href="/">Medios de pago</a>
