@@ -23,6 +23,18 @@ function SongProvider (props) {
     }, [2000])
   }, [])
 
+  useEffect(() => {
+    setTimeout(() =>{
+      setList(canciones)
+      setLoading(false)
+    },[3000]
+    )
+
+
+  }, [])
+
+
+
   // Tenemos que indicar al Provider, que datos debe proveer. Estos datos son públicos para todos los componentes
   const value = {
     list,
