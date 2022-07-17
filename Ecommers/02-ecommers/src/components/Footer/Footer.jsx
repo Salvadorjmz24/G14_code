@@ -1,6 +1,7 @@
-// import { Link } from 'react-router-dom'
-import './footer.css'
+
+import { Link } from 'react-router-dom'
 import logosNegro from '../../assets/img/logosNegro.png'
+import './footer.css'
 
 const Footer = () => {
   return (
