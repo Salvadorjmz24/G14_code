@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useProductosContext } from '@/context/ProductosContext'
 import logo from '../../assets/img/logo.png'
 
@@ -34,14 +35,13 @@ const Header = () => {
               <nav>
                 <ul className='list-links'>
                   <li className='nav-items'>
-                    {/* <Link to='/'>Home</Link> */}
+                    <Link to='/'>Home</Link>
                   </li>
                   <li className='nav-items'>
-                    {/* <Link to='/categoria'>Categorias
-                    </Link> */}
+                    <Link to='/categorias'>Categorias</Link>
                   </li>
                   <li className='nav-items'>
-                    {/* <Link to='/login'>Log in</Link> */}
+                    <Link to='/login'>Login</Link>
                   </li>
                 </ul>
               </nav>

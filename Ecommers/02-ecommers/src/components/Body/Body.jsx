@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useProductosContext } from '@/context/ProductosContext'
 import FadeLoader from 'react-spinners/FadeLoader'
 import './body.css'
@@ -13,8 +14,9 @@ const Body = () => {
     return (url.match(/^http[^\?]*.(jpg|jpeg|gif|png|tiff|bmp)(\?(.*))?$/gmi) !== null)
   }
 
+
   return (
-    <section>
+    <section className='tarjetas'>
       {context.loading
         ? <FadeLoader color='#000000' loading={context.loading} size={100} />
         : context.productos.filter(producto => {
@@ -38,13 +40,14 @@ const Body = () => {
                 <p> {`${producto.product_name} `}</p>
                 <p>{`Brand: ${producto.brand} `}</p>
                 <p>{`Price: $ ${producto.price} `}</p>
-                {/* <Link
+                {/* Duda */}
+                <Link
                   className='btn btn-dark'
                   to={{
                     pathname: `/${producto._id}`
                   }}
                 >View Details
-                </Link> */}
+                </Link>
               </div>
             </div>
           </div>
