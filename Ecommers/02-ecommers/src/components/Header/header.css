@@ -108,20 +108,8 @@ h2:hover::after {
     font-weight: bold;
 }
 
-@media (max-width: 1400px){
-.container{
-    width: 100%;
-}
-}
-
-@media (max-width: 768px){
-.container {
-    width: 100%;
-}
-}
-
-@media (max-width: 480px){
-.container {
-    width: 100%;
-}
-}
+@media (min-width: 1400px){
+    .container {
+        min-width: 100%;
+    }
+    }

@@ -3,7 +3,6 @@ import './App.css'
 import Error404 from './components/404Error/Error404'
 import Categorias from './components/Categorias/Categorias'
 import Footer from '@/components/Footer/Footer'
-import Login from './components/Login/Login'
 import ProductoDetalle from './components/ProductoDetalle/ProductoDetalle'
 import Kids from './components/Categorias/Subcategorias/Kids'
 import Automotive from './components/Categorias/Subcategorias/Automotive'
@@ -26,6 +25,9 @@ import Shoes from './components/Categorias/Subcategorias/Shoes'
 import Sports from './components/Categorias/Subcategorias/Sports'
 import Tools from './components/Categorias/Subcategorias/Tools'
 import Toys from './components/Categorias/Subcategorias/Toys'
+import Login from './pages/Login/Login'
+import Singup from './pages/Signup/Signup'
+import Compras from './pages/Compras/Compras'
 import Home from './pages/Home'
 
 function App () {
@@ -57,6 +59,8 @@ function App () {
         <Route path='/categorias/categoria/Tools' element={<Tools />} />
         <Route path='/categorias/categoria/Toys' element={<Toys />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/signup' element={<Singup />} />
+        <Route path='/compras' element={<Compras />} />
         <Route path='*' element={<Error404 />} />
       </Routes>
       <Footer />
@@ -65,4 +69,4 @@ function App () {
   )
 }
 
-export default App 
+export default App
