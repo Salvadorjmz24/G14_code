@@ -36,7 +36,7 @@ const Body = () => {
           >
             <div className='child'>
               <div className='card'>
-                <img className='imagen' src={validacionUrl(producto.image) ? producto.image : validacionUrl(producto.images) ? producto.images : producto.images || 'https://cf.geekdo-images.com/camo/cba429883803dadea626df689cdbf3ddc0dc1bba/68747470733a2f2f692e696d6775722e636f6d2f456161485557462e6a7067'} alt='' />
+                <img className='imagen' src={validacionUrl(producto.image) ? producto.image : validacionUrl(producto.images) ? producto.images : producto.images || 'https://i.pinimg.com/564x/e4/8d/66/e48d66ca946a9d1e4eb61b761f9528e0.jpg'} alt='' />
                 <p> {`${producto.product_name} `}</p>
                 <p>{`Brand: ${producto.brand} `}</p>
                 <p>{`Price: $ ${producto.price} `}</p>

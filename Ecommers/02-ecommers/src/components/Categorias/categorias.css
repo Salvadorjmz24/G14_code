@@ -15,3 +15,9 @@
   color: black;
   border: 2px solid black;
 }
+.main-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: aliceblue;
+}
