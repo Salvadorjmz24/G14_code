@@ -48,6 +48,7 @@ const Body = () => {
                   }}
                 >View Details
                 </Link>
+                <button className='btn btn-dark'>Comprar Producto</button>
               </div>
             </div>
           </div>
